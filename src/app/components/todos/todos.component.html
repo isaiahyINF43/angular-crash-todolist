@@ -1,0 +1,8 @@
+<h1> Todos </h1>
+<!--for every iterated item in the todos property of this component, pass it to the todo-item component as the input variable todo -->
+<app-todo-item 
+*ngFor="let todo of todos" 
+[todo]="todo"
+(deleteTodo)="deleteTodo($event)"
+> 
+</app-todo-item>
